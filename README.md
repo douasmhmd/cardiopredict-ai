@@ -183,8 +183,11 @@ La version Docker propriétaire en développement explore plusieurs pistes d'ext
 
 - **Spécialisation médicale de PyCaret** : ajout de métriques cliniques (sensibilité, spécificité, PPV, NPV, NNS) et de modèles de survie (Cox, Random Survival Forest) particulièrement adaptés au domaine cardiovasculaire
 - **Architecture microservices conteneurisée** sous Docker pour un déploiement clinique scalable
-- **Conformité réglementaire** : conception orientée RGPD, hébergement souverain envisagé, et préparation à la certification CE médical
-- **Intégration aux systèmes hospitaliers** via les standards HL7/FHIR
+- **Conformité réglementaire bi-juridictionnelle** :
+  - 🇫🇷 **RGPD** (UE) et 🇲🇦 **loi 09-08** supervisée par la **CNDP** pour la protection des données patients
+  - **Hébergement souverain** envisagé pour respecter la résidence des données
+  - Préparation à la **certification CE médical** (règlement EU MDR 2017/745) pour le marché européen
+  - Démarche d'**autorisation auprès du Ministère de la Santé** marocain (DMP) pour le déploiement local- **Intégration aux systèmes hospitaliers** via les standards HL7/FHIR
 
 > Cette version pro reste fermée et n'est pas distribuée publiquement.
 ---
