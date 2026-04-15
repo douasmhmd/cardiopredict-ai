@@ -1,0 +1,35 @@
+# Environnement virtuel
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets — TRÈS IMPORTANT
+.streamlit/secrets.toml
+.env
+*.key
+
+# Modèle entraîné (trop gros, sera régénéré)
+models/cardiac_model.pkl
+models/model_metadata.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Données sensibles patients
+data/patients_real_*.csv

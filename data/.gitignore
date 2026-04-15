@@ -1,0 +1,11 @@
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.streamlit/secrets.toml
+models/cardiac_model.pkl
+.env
+.DS_Store
+*.log
+data/wearable_stream_demo.csv
