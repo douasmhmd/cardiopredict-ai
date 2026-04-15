@@ -30,36 +30,34 @@ CardioPredict AI permet à un cardiologue, une infirmière ou un personnel clini
 5. **Générer** un rapport PDF clinique professionnel
 6. **Interagir** avec l'application en français, anglais ou darija marocaine — y compris à la voix
 
----
+## 🧠 Architecture
 
-##  Architecture
+```
 ┌─────────────────┐
 │   Streamlit UI  │  ← Interface multilingue (FR / AR / EN)
 └────────┬────────┘
-│
+         │
 ┌────────▼────────┐
 │   GPT-4o Brain  │  ← Compréhension du langage naturel + Whisper voice
 └────────┬────────┘
-│
-┌────┴────┐
-▼         ▼
+         │
+    ┌────┴────┐
+    ▼         ▼
 ┌────────┐ ┌──────────────┐
 │PyCaret │ │GPT-4o Médical│  ← AutoML + Interprétation clinique
 └────┬───┘ └──────┬───────┘
-│            │
-└─────┬──────┘
-▼
-┌──────────────┐
-│Session State │  ← Mémoire de l'app
-└──────┬───────┘
-│
-┌──────▼───────────────────────┐
-│ Sorties: Alertes, Dashboards,│
-│ Rapports PDF cliniques       │
-└──────────────────────────────┘
-
----
-
+     │            │
+     └─────┬──────┘
+           ▼
+    ┌──────────────┐
+    │Session State │  ← Mémoire de l'app
+    └──────┬───────┘
+           │
+    ┌──────▼───────────────────────┐
+    │ Sorties: Alertes, Dashboards,│
+    │ Rapports PDF cliniques       │
+    └──────────────────────────────┘
+```
 ## ✨ Fonctionnalités principales
 
 - 🤖 **AutoML avec PyCaret** — comparaison automatique de 15+ algorithmes (Random Forest, XGBoost, LightGBM, SVM, etc.)
@@ -114,9 +112,9 @@ L'app s'ouvre automatiquement dans votre navigateur sur `http://localhost:8501`.
 ---
 
 
----
-
 ## 🗂️ Structure du projet
+
+```
 cardiopredict-ai/
 ├── app.py                    # Point d'entrée Streamlit
 ├── automl/
@@ -141,22 +139,7 @@ cardiopredict-ai/
 │   └── cardiac_model.pkl     # Modèle pré-entraîné (généré)
 ├── requirements.txt
 └── README.md
-
----
-
-## 🎓 Contexte académique
-
-Ce projet a été développé dans le cadre d'un projet d'école d'ingénieur sur le thème de l'**AutoML appliqué au secteur de la santé**, en s'inspirant notamment des travaux de recherche sur AutoML-Med (système d'AutoML spécialisé pour les données médicales tabulaires).
-
-### Concepts démontrés
-
-- **Démocratisation du Machine Learning** : permettre aux experts métier (médecins, infirmières) de prototyper sans coder
-- **Architecture en couches** : séparation claire entre interface, intelligence (LLM), AutoML, et stockage
-- **Interprétabilité par LLM** : utiliser un grand modèle de langage pour traduire les sorties techniques en langage métier
-- **Multilinguisme inclusif** : supporter les langues locales (darija) pour un usage réel en clinique
-
----
-
+```
 ## ⚖️ Avertissement médical
 
 **CardioPredict AI est un outil d'aide à la décision et un prototype académique.** Les prédictions générées :
