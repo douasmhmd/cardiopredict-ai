@@ -170,11 +170,23 @@ L'utilisation de cet outil dans un cadre clinique réel nécessiterait une valid
 
 ## 🙏 Remerciements
 
-- **PyCaret** pour la librairie AutoML open source(Forked for a proprietary version)
-- **OpenAI** pour GPT-4o et Whisper(open source llm and servers  hosted in morocco datacenters )
-- **Streamlit** pour le framework de prototypage
-- **UCI Machine Learning Repository** pour le Heart Disease dataset
+- **[PyCaret](https://pycaret.org)** — Librairie AutoML open source (MIT) qui constitue le cœur de notre moteur de prédiction
+- **[OpenAI](https://openai.com)** — Modèles GPT-4o et Whisper utilisés via leur API pour l'interprétation médicale et la transcription vocale
+- **[Streamlit](https://streamlit.io)** — Framework Python utilisé pour l'interface utilisateur et le prototypage rapide
+- **[UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/45/heart+disease)** — Heart Disease Dataset utilisé pour l'entraînement et la démonstration
 
+---
+
+### À propos de la version propriétaire
+
+La version Docker propriétaire en développement explore plusieurs pistes d'extension :
+
+- **Spécialisation médicale de PyCaret** : ajout de métriques cliniques (sensibilité, spécificité, PPV, NPV, NNS) et de modèles de survie (Cox, Random Survival Forest) particulièrement adaptés au domaine cardiovasculaire
+- **Architecture microservices conteneurisée** sous Docker pour un déploiement clinique scalable
+- **Conformité réglementaire** : conception orientée RGPD, hébergement souverain envisagé, et préparation à la certification CE médical
+- **Intégration aux systèmes hospitaliers** via les standards HL7/FHIR
+
+> Cette version pro reste fermée et n'est pas distribuée publiquement.
 ---
 
 ## 📜 Licence
