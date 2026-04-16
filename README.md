@@ -1,16 +1,22 @@
 # 🫀 CardioPredict AI
 
 > **Plateforme d'aide à la décision cardiovasculaire propulsée par AutoML et IA générative**
-📺 **[Voir la démo vidéo sur YouTube][![Démo CardioPredict AI](https://img.youtube.com/vi/abc123xyz/maxresdefault.jpg)](https://youtu.be/ncP06FqsrS0)
-**
+
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red.svg)](https://streamlit.io)
 [![PyCaret](https://img.shields.io/badge/PyCaret-3.x-orange.svg)](https://pycaret.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Watch_Demo-red?logo=youtube)](https://youtu.be/ncP06FqsrS0)
 
-> 🎥 Cliquez sur l'image pour voir la démonstration complète
 ---
 
+## 🎬 Démonstration vidéo
+
+[![Démo CardioPredict AI](https://img.youtube.com/vi/ncP06FqsrS0/maxresdefault.jpg)](https://youtu.be/ncP06FqsrS0)
+
+> 🎥 **Cliquez sur l'image pour voir la démonstration complète**
+
+---
 ## ⚠️ Version prototype
 
 **Cette version publique est une version initiale et démonstrative** de CardioPredict AI, construite avec **Streamlit** pour faciliter le prototypage rapide et la démonstration des concepts AutoML appliqués au domaine médical.
